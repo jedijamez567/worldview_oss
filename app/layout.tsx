@@ -9,7 +9,7 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "WORLDVIEW | Intelligence Dashboard",
+  title: "Awesome Worldview OSS | Intelligence Dashboard",
   description: "Real-time OSINT intelligence platform",
 };
 
