@@ -1,4 +1,12 @@
+# Explicit build-script approvals (pnpm `allowBuilds`).
+# All three are denied: none of them produce an artifact this project consumes.
+# - protobufjs:   postinstall only emits a version-scheme warning to stderr.
+# - sharp:        prebuilt @img/sharp-* binaries ship via optionalDependencies;
+#                 allowing it would invite a from-source libvips compile.
+# - unrs-resolver: napi-postinstall works around an npm optional-dep bug that
+#                 pnpm does not have.
+# Flip an entry to true only if a platform genuinely lacks a prebuilt binary.
 allowBuilds:
-  protobufjs: set this to true or false
-  sharp: set this to true or false
-  unrs-resolver: set this to true or false
+  protobufjs: false
+  sharp: false
+  unrs-resolver: false
