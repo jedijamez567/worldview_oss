@@ -25,7 +25,7 @@ const Globe = dynamic(() => import("@/components/Globe"), {
     <div className="w-full h-full flex items-center justify-center bg-[#000a00]">
       <div className="flex flex-col items-center gap-4">
         <div className="text-green-500 font-mono text-lg tracking-[0.3em] hud-glow animate-pulse">
-          WORLDVIEW
+          Awesome Worldview OSS
         </div>
         <div className="text-green-700/50 font-mono text-[10px] tracking-widest">
           INITIALIZING SYSTEMS...
